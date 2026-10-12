@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una nueva forma de vivir tu entrenamiento. Diseño inicial de la web del gimnasio.">
+  <title>Salvaje | Life Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Ir al contenido</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <!-- Marca provisional tomada de la referencia; se podrá personalizar. -->
+      <a class="brand" href="#inicio" aria-label="MVD GYM, inicio"><strong>MVD <span class="brand-gym">GYM</span></strong></a>
+      <nav class="navigation" id="navigation" aria-label="Navegación principal">
+        <a href="#inicio" aria-current="page">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#planes">Planes</a>
+        <a href="#clases">Clases</a>
+        <a href="#sede">Nuestra sede</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span></button>
+    </header>
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <!-- Fotografía provisional externa; podremos reemplazarla por una propia. -->
+        <img class="hero-image" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2200&q=85" alt="Sala de gimnasio con equipamiento para entrenamiento de fuerza" fetchpriority="high">
+        <div class="hero-content">
+          <p class="eyebrow"><span aria-hidden="true">▸</span> Más que un gimnasio</p>
+          <h1 id="hero-title">Disciplina<br>hoy,<br><span>resultados</span><br>siempre.</h1>
+          <p class="hero-description">Entrená en un ambiente real, con personas que te impulsan. Un espacio pensado para vos.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://wa.me/59892345678" target="_blank" rel="noopener noreferrer" aria-label="Consultas por WhatsApp (se abre en otra pestaña)">Consultas WhatsApp <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="nosotros" aria-labelledby="about-title">
+        <!-- Foto provisional: reemplazable por la fotografía original del gimnasio. -->
+        <div class="about-photo">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1400&q=85" alt="Interior de un gimnasio con máquinas y equipos de musculación" loading="lazy" width="1400" height="700">
+        </div>
+        <div class="about-content">
+          <p class="section-label">Nosotros</p>
+          <h2 id="about-title">Entrenamiento<br>real para gente real.</h2>
+          <p class="about-description">Somos un gimnasio pensado para personas que quieren superarse. Acá vas a encontrar un espacio donde el esfuerzo, la constancia y la buena energía se viven todos los días.</p>
+        </div>
+      </section>
+      <section class="hours" id="horarios" aria-labelledby="hours-title">
+        <img class="hours-image" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2000&q=85" alt="Entrenamiento de fuerza en el gimnasio" loading="lazy" width="2000" height="1000">
+        <div class="hours-content">
+          <p class="section-label">Horarios</p>
+          <h2 id="hours-title">Entrená<br>cuando quieras</h2>
+          <p class="hours-description">Contamos con amplios horarios para que puedas<br class="hours-break"> organizar tu rutina como prefieras.</p>
+          <!-- Horarios tomados de la referencia; se podrán ajustar a los del gimnasio. -->
+          <dl class="hours-schedule">
+            <div>
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="16" cy="18" r="10"/><path d="M16 12v6l4 2M12 3h8M16 3v5M6 6l3 3M26 6l-3 3"/></svg>
+              <dt>Lunes a Viernes</dt><dd>7:00 - 23:00</dd>
+            </div>
+            <div>
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="7" width="20" height="21" rx="2"/><path d="M6 13h20M11 3v8M21 3v8M11 18h10M11 23h6"/></svg>
+              <dt>Sábados</dt><dd>8:00 - 18:00</dd>
+            </div>
+            <div>
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="7" width="20" height="21" rx="2"/><path d="M6 13h20M11 3v8M21 3v8M11 18h10M11 23h6"/></svg>
+              <dt>Domingos</dt><dd>9:00 - 14:00</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="plans" id="planes" aria-labelledby="plans-title">
+        <p class="section-label"><span aria-hidden="true">▸</span> Planes</p>
+        <h2 id="plans-title">Elegí el plan<br>que va con vos</h2>
+        <!-- Precios y prestaciones tomados de la referencia. -->
+        <div class="plans-grid">
+          <article class="plan-card" aria-labelledby="basic-title">
+            <div class="plan-heading">
+              <span class="plan-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 16h14M5 10v12M9 7v18M23 7v18M27 10v12M2 16h3M27 16h3"/></svg></span>
+              <div><h3 id="basic-title">Básico</h3><p class="plan-price">$1.300 <span>/mes</span></p></div>
+            </div>
+            <ul class="plan-features"><li>Acceso a 1 sede</li><li>Sala de musculación</li><li>Horarios completos</li></ul>
+            <button class="plan-button" type="button" data-section="Plan Básico" aria-label="Elegir plan Básico">Elegir plan</button>
+          </article>
+          <article class="plan-card plan-featured" aria-labelledby="full-title">
+            <span class="plan-badge">Más elegido</span>
+            <div class="plan-heading">
+              <span class="plan-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="16" cy="6" r="3"/><path d="M10 28l3-10V12h6v6l3 10M5 13h22M6 9v8M26 9v8M13 19h6"/></svg></span>
+              <div><h3 id="full-title">Full</h3><p class="plan-price">$1.700 <span>/mes</span></p></div>
+            </div>
+            <ul class="plan-features"><li>Acceso a todas las sedes</li><li>Sala de musculación</li><li>Clases grupales</li><li>Asesoramiento inicial</li></ul>
+            <button class="plan-button" type="button" data-section="Plan Full" aria-label="Elegir plan Full">Elegir plan</button>
+          </article>
+          <article class="plan-card" aria-labelledby="premium-title">
+            <div class="plan-heading">
+              <span class="plan-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 23 3 8l8 6 5-10 5 10 8-6-2 15ZM5 28h22M8 19h16"/></svg></span>
+              <div><h3 id="premium-title">Premium</h3><p class="plan-price">$2.200 <span>/mes</span></p></div>
+            </div>
+            <ul class="plan-features"><li>Todas las sedes</li><li>Clases grupales ilimitadas</li><li>Entrenamiento personalizado<br>(1 sesión/mes)</li><li>Asesoramiento en nutrición</li></ul>
+            <button class="plan-button" type="button" data-section="Plan Premium" aria-label="Elegir plan Premium">Elegir plan</button>
+          </article>
+        </div>
+      </section>
+      <section class="classes" id="clases" aria-labelledby="classes-title">
+        <div class="classes-photo">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=85" alt="Personas entrenando en una clase grupal" loading="lazy" width="1400" height="800">
+        </div>
+        <div class="classes-content">
+          <p class="section-label">Clases</p>
+          <h2 id="classes-title">Más que una rutina,<br>una comunidad</h2>
+          <p class="classes-description"><strong class="class-types">Funcional, Spinning, GAP y sala de musculación.</strong></p>
+          <button class="button" id="open-class-schedule" type="button" aria-haspopup="dialog">Horarios <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+      <section class="location" id="sede" aria-labelledby="location-title">
+        <img class="location-background" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=85" alt="" loading="lazy" width="2000" height="1000">
+        <div class="location-content">
+          <p class="section-label">Nuestra sede</p>
+          <h2 id="location-title">Tu lugar<br>para entrenar</h2>
+          <dl class="location-details">
+            <div><dt><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Dirección</dt><dd><button class="address-link" id="open-map" type="button" aria-haspopup="dialog">Chile y Ansina</button></dd></div>
+            <div><dt><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 3 3 5-2 2a16 16 0 0 0 6 6l2-2 5 3c-1 4-3 5-6 4C9 19 5 15 3 9 2 6 3 4 7 3Z"/></svg>Teléfono</dt><dd><a href="https://wa.me/59892345678" target="_blank" rel="noopener noreferrer" aria-label="Contactar al 092345678 por WhatsApp (se abre en otra pestaña)">092345678</a></dd></div>
+            <div><dt><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Correo electrónico</dt><dd><a href="mailto:gymgym@gmail.com">gymgym@gmail.com</a></dd></div>
+            <div><dt><svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Horarios</dt><dd>Lunes a viernes: 07:00 - 23:00<br>Sábados: 08:00 - 18:00<br>Domingos: 09:00 - 14:00</dd></div>
+          </dl>
+        </div>
+      </section>
+      <!-- Las secciones restantes se desarrollarán en las próximas etapas. -->
+    </main>
+    <footer class="site-footer">
+      <div class="footer-banner">
+        <img class="footer-image" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2000&q=85" alt="" loading="lazy" width="2000" height="1000">
+        <div class="footer-invitation">
+          <h2>¿Listo para empezar?</h2>
+          <p>Sumate hoy y formá parte de una comunidad que te impulsa.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Salvaje Life Fitness</p>
+        <div class="footer-socials" aria-label="Redes sociales">
+          <a class="social-link" href="https://wa.me/59892345678" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (se abre en otra pestaña)">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M27 15.5A11.5 11.5 0 0 1 10 25.6L4 27l1.5-5.8A11.5 11.5 0 1 1 27 15.5Z"/><path d="M11.1 9.7c.5-.3 1-.3 1.3.3l1.1 2.4c.2.4.1.7-.2 1.1l-.8.8c1 2 2.5 3.5 4.5 4.4l.9-1c.3-.3.7-.4 1.1-.2l2.2 1.1c.6.3.7.7.5 1.3-.5 1.5-1.8 2.1-3.2 1.8-5.5-1.1-9.6-5.5-10-9.2-.1-1.2 1.2-2.5 2.6-2.8Z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/gymgym/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de gymgym (se abre en otra pestaña)">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="6"/><circle cx="16" cy="16" r="5"/><circle cx="23" cy="9" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a class="whatsapp-floating" href="https://wa.me/59892345678" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (se abre en otra pestaña)">
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M27 15.5A11.5 11.5 0 0 1 10 25.6L4 27l1.5-5.8A11.5 11.5 0 1 1 27 15.5Z"/><path d="M11.1 9.7c.5-.3 1-.3 1.3.3l1.1 2.4c.2.4.1.7-.2 1.1l-.8.8c1 2 2.5 3.5 4.5 4.4l.9-1c.3-.3.7-.4 1.1-.2l2.2 1.1c.6.3.7.7.5 1.3-.5 1.5-1.8 2.1-3.2 1.8-5.5-1.1-9.6-5.5-10-9.2-.1-1.2 1.2-2.5 2.6-2.8Z"/></svg>
+  </a>
+  <dialog class="class-schedule-dialog" id="class-schedule-dialog" aria-labelledby="class-schedule-title">
+    <button class="modal-close" id="close-class-schedule" type="button" aria-label="Cerrar horarios de clases">×</button>
+    <p class="section-label">Clases</p>
+    <h2 id="class-schedule-title">Días y horarios</h2>
+    <p class="schedule-example">Horarios ficticios de ejemplo.</p>
+    <dl class="class-timetable">
+      <div><dt>Funcional</dt><dd>Lunes, miércoles y viernes<span>08:00 - 09:00 · 19:00 - 20:00</span></dd></div>
+      <div><dt>Spinning</dt><dd>Martes y jueves<span>09:00 - 10:00 · 18:00 - 19:00</span></dd></div>
+      <div><dt>GAP</dt><dd>Lunes, miércoles y viernes<span>10:00 - 11:00 · 20:00 - 21:00</span></dd></div>
+      <div><dt>Sala de musculación</dt><dd>Lunes a viernes<span>07:00 - 23:00</span>Sábados<span>08:00 - 18:00</span>Domingos<span>09:00 - 14:00</span></dd></div>
+    </dl>
+  </dialog>
+  <dialog class="map-dialog" id="map-dialog" aria-labelledby="map-title">
+    <button class="modal-close" id="close-map-dialog" type="button" aria-label="Cerrar mapa">×</button>
+    <h2 id="map-title">Nuestra ubicación</h2>
+    <iframe id="location-map" title="Mapa de la sede en Chile y Ansina, Montevideo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <p class="map-address">Chile y Ansina, Montevideo</p>
+  </dialog>
+  <dialog class="plan-dialog" id="plan-dialog" aria-labelledby="selected-plan-title">
+    <button class="modal-close" id="close-plan-dialog" type="button" aria-label="Cerrar tarjeta del plan">×</button>
+    <p class="section-label">Tu plan</p>
+    <h2 id="selected-plan-title"></h2>
+    <p class="plan-price" id="selected-plan-price"></p>
+    <ul class="plan-features" id="selected-plan-features"></ul>
+    <a class="button plan-contact" id="plan-whatsapp" target="_blank" rel="noopener noreferrer">Consultas WhatsApp <span aria-hidden="true">→</span></a>
+  </dialog>
+  <dialog id="stage-dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title">Próxima etapa</h2>
+    <p id="dialog-message"></p>
+    <button class="button" id="close-dialog" type="button">Entendido <span aria-hidden="true">×</span></button>
+  </dialog>
+</body>
+</html>
