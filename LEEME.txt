@@ -1,0 +1,6 @@
+MVD GYM
+
+Subí index.html, styles.css, script.js y la carpeta assets a la raíz de tu repositorio.
+Para verlo localmente, abrí index.html en el navegador.
+Para GitHub Pages: Settings > Pages > Deploy from a branch > main > / (root) > Save.
+Las fuentes y el mapa requieren conexión a Internet.

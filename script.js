@@ -144,3 +144,4 @@ classScheduleDialog.addEventListener("click", event => {
     classScheduleDialog.close();
   }
 });
+
